@@ -52,13 +52,13 @@ const AutocompleteInput = () => {
                    }}
                    value={input}
             />
-            <label> Name </label>
+            {/*<label> Name </label>*/}
 
             <ul className="suggestions">
 
                 {
                     suggestions && suggestions.map((suggestion, index) =>
-                        <div key={index}
+                        <li key={index}
                              className={index === activeSuggestion ? 'suggestion suggestion-active'
                                  :
                                  'suggestion'}
@@ -66,11 +66,12 @@ const AutocompleteInput = () => {
                              onClick={() => onSuggestHandler(suggestion)}
                         >
                             <span> <i className="arrow right"></i> {suggestion}</span> {suggestion}
-                        </div>
+                        </li>
                     )
                 }
 
             </ul>
+
 
 
 

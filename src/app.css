@@ -16,7 +16,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     color: #fff;
 }
 
@@ -24,7 +23,6 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     font-size: 1.2rem;
-    /*margin: 0 auto;*/
     padding: 1.5rem 2rem;
     border-radius: 0.2rem;
     background-color: rgb(255, 255, 255);
@@ -33,24 +31,16 @@ body {
     border-bottom: 0.3rem solid transparent;
     transition: all 0.3s;
     width: 25vw;
+    position: relative;
+}
 
+
+.suggestions {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-    }
-
-
-.suggestions{
-    position: absolute;
-    top: 55%;
-    left: 35%;
-    /*margin-right: -50%;*/
-    /*transform: translate(50%, 50%)*/
 }
 
 .suggestion {
+    list-style-type: none;
     cursor: pointer;
     font-size: 1.2rem;
     background: rgb(0, 0, 0, .3);
@@ -65,7 +55,6 @@ body {
 }
 
 .arrow {
-    /*border: solid black;*/
     border: solid #c850c0;
     border-width: 0 3px 3px 0;
     display: inline-block;
